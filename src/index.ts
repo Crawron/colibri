@@ -29,7 +29,7 @@ export class Timer extends Time {
 	ended = false
 	loop: boolean
 
-	constructor(onEnd: ()=>any, duration: number, loop: boolean) {
+	constructor(onEnd: () => any, duration: number, loop: boolean) {
 		super()
 
 		this.duration = duration
@@ -42,7 +42,7 @@ export class Timer extends Time {
 		super.update()
 		this.timeRemaining = this.duration - this.elapsedTime
 
-		if(this.timeRemaining <= 0 && !this.ended) {
+		if (this.timeRemaining <= 0 && !this.ended) {
 			this.onEnd()
 			this.ended = true
 			if(this.loop) this.restart()
