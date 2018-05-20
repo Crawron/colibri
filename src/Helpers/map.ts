@@ -1,4 +1,3 @@
-import { Color } from 'three'
 import { NumberRange } from '../Classes/Range'
 import { constrain } from './constrain';
 
