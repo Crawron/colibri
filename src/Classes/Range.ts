@@ -10,4 +10,8 @@ export class NumberRange {
     get length() {
         return this.end - this.start
     }
+
+    get inverse() {
+        return new NumberRange(this.end, this.start)
+    }
 }
